@@ -14,7 +14,29 @@
 };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        esccombo {
+            bindings = <&kp ESC>;
+            key-positions = <0 1>;
+        };
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <31 30>;
+        };
+
+        henkan {
+            bindings = <&kp INT_HENKAN>;
+            key-positions = <19 18>;
+        };
+
+        muhenkan {
+            bindings = <&kp INT_MUHENKAN>;
+            key-positions = <12 13>;
+        };
+    };
 
     macros {
         to_layer_0: to_layer_0 {
