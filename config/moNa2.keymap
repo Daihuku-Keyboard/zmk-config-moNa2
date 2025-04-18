@@ -71,10 +71,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E         &kp R               &kp T                                               &kp Y            &kp U    &kp I      &kp O    &kp P
-&mt LCTRL A       &kp S         &kp D         &kp F               &kp G             &trans             &kp APOS       &kp H            &lt 5 J  &lt 3 K    &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B             &lt 4 LG(LS(S))    &kp RG(LA(N))  &kp N            &kp M    &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 INT_MUHENKAN  &lt 3 INT_HENKAN  &lt 6 SPACE        &kp ENTER      &lt 1 BACKSPACE                               &kp LEFT_SHIFT
+&kp Q             &kp W         &kp E         &kp R               &kp T                                               &kp Y            &kp U  &kp I      &kp O    &kp P
+&mt LCTRL A       &kp S         &kp D         &kp F               &kp G             &trans             &kp APOS       &kp H            &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B             &lt 4 LG(LS(S))    &kp RG(LA(N))  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL         &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 INT_MUHENKAN  &lt 3 INT_HENKAN  &lt 6 SPACE        &kp ENTER      &lt 1 BACKSPACE                             &kp LEFT_SHIFT
             >;
 
             sensor-bindings =
@@ -86,7 +86,7 @@
             bindings = <
 &trans  &kp LA(N7)        &kp LA(N8)        &kp LA(N9)        &trans                    &kp F1   &kp F2   &kp F3         &kp F4        &kp F5
 &trans  &kp LA(NUMBER_4)  &kp LA(N5)        &kp LA(NUMBER_6)  &trans  &trans    &trans  &kp F6   &kp F7   &kp F8         &kp F9        &kp F10
-&trans  &kp LA(N1)        &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans  &trans    &trans  &kp F11  &kp F12  &kp LC(MINUS)  &kp LC(PLUS)  &trans
+&trans  &kp LA(N1)        &kp LA(NUMBER_2)  &kp LA(NUMBER_3)  &trans  &trans    &trans  &kp F11  &kp F12  &kp LC(MINUS)  &kp LC(PLUS)  &kp LA(LEFT)
 &trans  &trans            &trans            &trans            &trans  &trans    &trans  &trans                                         &trans
             >;
 
