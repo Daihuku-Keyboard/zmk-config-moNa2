@@ -8,7 +8,7 @@
 #define MOUSE 6
 
 &mt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     quick-tap-ms = <100>;
     tapping-term-ms = <200>;
 };
