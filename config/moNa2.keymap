@@ -92,7 +92,7 @@
             bindings = <
 &kp Q             &kp W         &kp E         &kp R               &kp T                                               &kp Y            &kp U  &kp I      &kp O    &kp P
 &mt LCTRL A       &kp S         &kp D         &kp F               &kp G             &trans             &kp APOS       &kp H            &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B             &lt 4 LG(LS(S))    &kp RG(LA(N))  &kp N            &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V               &kp B             &lt 4 LG(LS(S))    &kp RG(LA(N))  &kp N            &kp M  &kp COMMA  &kp DOT  &mt RIGHT_SHIFT SLASH
 &mt LCTRL TAB     &kp LEFT_WIN  &kp LEFT_ALT  &lt 2 INT_MUHENKAN  &lt 3 INT_HENKAN  &lt 6 SPACE        &kp ENTER      &lt 1 BACKSPACE                             &kp LEFT_SHIFT
             >;
 
@@ -125,10 +125,10 @@
 
         layer_3 {
             bindings = <
-&kp ESCAPE            &kp LC(W)          &kp LA(F4)  &kp LS(RC(TAB))  &kp RC(TAB)                             &trans      &kp HOME  &kp END       &trans     &trans
-&kp LC(A)             &kp LC(S)          &kp PG_UP   &kp PAGE_DOWN    &kp ENTER      &trans    &bracketkagi   &kp LEFT    &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp COLON
-&mt LEFT_SHIFT LC(Z)  &kp LC(X)          &kp LC(C)   &kp LC(V)        &kp BACKSPACE  &trans    &bracketkakko  &trans      &trans    &trans        &trans     &trans
-&kp LC(PG_UP)         &kp LC(PAGE_DOWN)  &trans      &trans           &trans         &trans    &trans         &kp DELETE                                     &trans
+&kp ESCAPE            &kp LC(W)  &kp LA(F4)  &kp LS(RC(TAB))  &kp RC(TAB)                             &trans      &kp HOME  &kp END       &trans     &trans
+&kp LC(A)             &kp LC(S)  &kp PG_UP   &kp PAGE_DOWN    &kp ENTER      &trans    &bracketkagi   &kp LEFT    &kp DOWN  &kp UP_ARROW  &kp RIGHT  &kp COLON
+&mt LEFT_SHIFT LC(Z)  &kp LC(X)  &kp LC(C)   &kp LC(V)        &kp BACKSPACE  &trans    &bracketkakko  &trans      &trans    &trans        &trans     &trans
+&none                 &none      &trans      &trans           &trans         &trans    &trans         &kp DELETE                                     &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
@@ -148,7 +148,7 @@
         layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &none   &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
             >;
@@ -158,10 +158,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)                    &kp LS(LA(LC(LG(Y))))  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &kp LG(LA(LC(LS(P))))
-&trans  &trans  &trans  &trans           &trans             &trans    &trans  &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &kp MINUS
-&trans  &trans  &trans  &trans           &trans             &trans    &trans  &trans                 &mkp MB1               &trans                 &mkp MB2               &trans
-&trans  &trans  &trans  &trans           &trans             &trans    &trans  &trans                                                                                      &trans
+&trans  &trans            &trans            &kp LC(LEFT)      &kp LC(RIGHT)                    &kp LS(LA(LC(LG(Y))))  &kp LS(LA(LC(LG(U))))  &kp LS(LA(LC(LG(I))))  &kp LS(LA(LC(LG(O))))  &kp LG(LA(LC(LS(P))))
+&trans  &trans            &trans            &trans            &trans         &trans    &trans  &kp LS(LA(LC(LG(H))))  &kp LS(LA(LC(LG(J))))  &kp LS(LA(LC(LG(K))))  &kp LS(LA(LC(LG(L))))  &kp MINUS
+&trans  &kp RC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &trans         &trans    &trans  &trans                 &mkp MB1               &trans                 &mkp MB2               &trans
+&trans  &trans            &trans            &trans            &trans         &trans    &trans  &trans                                                                                      &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
